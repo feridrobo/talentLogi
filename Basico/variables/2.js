@@ -2,12 +2,12 @@
 // y te diga el precio con descuento. Por ejemplo, si el precio que introduce 
 // el usuario es 300 y el descuento 20, el programa dirá que el precio final con descuento es de 240. 
 
-let precio = parseFloat(prompt("Digite el precio del producto:"));
-let descuento = parseFloat(prompt("Digite el % del descuento:")) / 100;
+const readline = require('readline').createInterface({input: process.stdin, output: process.stdout});
 
-function calcularDescuento(precio,descuento){
-    let precioFinal = precio - (precio * descuento )
-    return precioFinal;
-}
-
-alert("El precio final es: " + calcularDescuento(precio,descuento));
+readline.question("Digite el precio del producto:", precio => {
+    readline.question("Digite el % del descuento:", descuento => {
+        const calcularDescuento = (precio, descuento) => precio - (precio * (descuento / 100));
+        console.log("El precio final es: " + calcularDescuento(parseFloat(precio),parseFloat(descuento)));
+        readline.close();
+    });
+});
