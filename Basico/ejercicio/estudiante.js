@@ -14,7 +14,7 @@ class Estudiante {
 
     mediaArray() {
         const valor = this.calificaciones.reduce(
-            (accumulator, item) => accumulator = accumulator + item
+            (accumulator, item) =>  accumulator + item
         );
         let media = valor / this.calificaciones.length;
         return media;
