@@ -5,20 +5,7 @@ class Estudiante {
         this.calificaciones = calificaciones;
     }
 
-    // Getter
-    get nombre() {
-        return this.nombre();
-    }
-
-    
-
-    // Getter
-    get edad() {
-        return this.edad();
-    }
-
   
-
     // Getter
     get media() {
         return this.mediaArray(this.calificaciones);
@@ -49,6 +36,11 @@ const  estudiante4 = new Estudiante("sandra", 33, [2.0,1.0, 4.2]);
 
 let estudiantes = new Array(estudiante1,estudiante2,estudiante3,estudiante4);
 
-estudiantes.forEach(element => {
-    console.log(element.aprobo());
-});
+for (let i = 0; i < estudiantes.length; i++) {
+    let estudiante = estudiantes[i];
+    let nota = estudiante.mediaArray(estudiante.calificaciones);
+    let resultado = estudiante.aprobo(nota);
+    if (resultado) {
+      console.log(resultado);
+    }
+  }
