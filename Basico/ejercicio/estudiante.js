@@ -7,26 +7,27 @@ class Estudiante {
 
     // Getter
     get nombre() {
-        return this.mediaArray();
+        return this.nombre();
     }
 
     
 
     // Getter
     get edad() {
-        return this.mediaArray();
+        return this.edad();
     }
 
   
 
     // Getter
     get media() {
-        return this.mediaArray();
+        return this.mediaArray(this.calificaciones);
     }
     // Método
     mediaArray(calificaciones) {
+        let valor = 0;
         calificaciones.forEach(element => {
-            let valor = valor + element;
+             valor = valor + element;
         });
         valor = valor / calificaciones.length();
         return valor;
