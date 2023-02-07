@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Desarrollar un programa que calcule el factorial de un número entero positivo.
+        El factorial de un número es el producto de todos los números enteros positivos
+        desde 1 hasta el número en cuestión.
+    -->
+    <script>
+        let num = prompt("Digite un numero: ");
+        let valor = 1;
+        for (let i = 1; i <= num; i++) {          
+            document.write(valor + " X "+ i +" = "+ (valor*i) + "<br>");
+            valor = valor*i;
+        }
+    </script>
+</body>
+</html>

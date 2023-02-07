@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+         Escriba un programa que reciba cuatro calificaciones de un 
+         estudiante y devuelva el promedio y la máxima y la mínima calificación.
+    -->
+    <script>
+    let calificacion1 = parseFloat(prompt("Digite la calificacion 1:"));
+    let calificacion2 = parseFloat(prompt("Digite la calificacion 2:"));
+    let calificacion3 = parseFloat(prompt("Digite la calificacion 3:"));
+    let calificacion4 = parseFloat(prompt("Digite la calificacion 4:"));
+    
+    let promedio = (calificacion1 + calificacion2 + calificacion3 + calificacion4)/4;
+    let maximaNota = Math.max(calificacion1,calificacion2,calificacion3,calificacion4);
+    let minimaNota = Math.min(calificacion1,calificacion2,calificacion3,calificacion4);
+    document.write("El promedio es: "+promedio+" <br> La nota maxima es: "+maximaNota+
+    " <br> La nota minima es: "+minimaNota)
+    </script>
+</body>
+</html>

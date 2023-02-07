@@ -1,0 +1,31 @@
+Que es asyncronismo?
+
+Ej:
+
+Que es una promesa ?
+
+Ej:
+
+Que es callBack ?
+
+Ej:
+
+Que es Await ?
+
+Ej:
+
+Que es Event Loop ?
+Ej:
+
+Javascript comparado con otrolenguaje por ejemplo java como funciona si ejecucion del codigo?
+
+Cuales son los tipos de funciones?
+
+
+Que es una funcin flecha ?
+
+Que es propagacion en js?
+
+
+0 1 1 2 3|
+

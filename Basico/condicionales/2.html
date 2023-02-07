@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Determinar la naturaleza par o impar de un número.
+    -->
+    <script>
+    let numero = parseFloat(prompt("Digite un numero: "));
+  
+if (typeof numero == 'number' && !Number.isNaN(numero)) {
+     if(numero % 2 == 0){
+        document.write("El numero es par");
+    }else if(!numero % 2 == 0){
+        document.write("El numero es impar");
+    }
+}else{
+    document.write("Digite un dato correctamente")
+}
+
+    </script>
+</body>
+</html>

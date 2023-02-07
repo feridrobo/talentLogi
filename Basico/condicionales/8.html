@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Realizar un programa que pida tres números y diga
+         cuáles son pares y cuáles impares. 
+    -->
+    <script>
+        let num1 = parseFloat(prompt("Digite el primer numero "));
+        let num2 = parseFloat(prompt("Digite el segundo numero"));
+        let num3 = parseFloat(prompt("Digite el tercer numero"));
+        let arr = [num1,num2,num3];
+        arr.forEach(element => {
+            if(element %  2 == 0){
+                document.write("El numero "+ element + " es par <br>" )
+            }else[
+                document.write("El numero "+ element + " es impar <br> ")
+            ]
+        });
+        
+    </script>
+</body>
+</html>

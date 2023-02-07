@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Realizar un algoritmo para determinar cuánto ahorrará una persona
+        en un año, si al final de cada mes deposita cantidades variables
+        de dinero; además, se quiere saber cuánto lleva ahorrado cada mes.
+    -->
+    <script>
+        let mesActual = prompt("Digite el numero del mes actual: ");
+        let dinero = 0;
+        let acumulado = 0;
+        for (let i = 0; i < mesActual; i++) {
+           dinero = parseFloat(prompt("Digite el valor del dinero ahorrado en el mes "+ (i+1)));
+           acumulado += dinero;
+           document.write("El dinero ahorrado hasta el mes "+ (i+1)+ " es: "+ acumulado+ "<br>");
+        }
+
+    </script>
+</body>
+</html>

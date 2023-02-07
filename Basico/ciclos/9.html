@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Escribir un programa que imprima todos los números pares entre dos
+        números que se le pida al usuario.
+    -->
+    <script>
+        let inicia = parseFloat(prompt("Digite en numero el el que el rango va a iniciar: "));
+        let fin = parseFloat(prompt("Digite en numero el el que el rango va a terminar: "));
+        for (let i = inicia; i <= fin; i++) {
+            if(i % 2 == 0){
+                document.write(i + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

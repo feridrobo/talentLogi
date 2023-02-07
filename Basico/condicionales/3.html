@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+         Pedir dos números y decir si non múltiplos o no
+    -->
+    <script>
+    let num1 = prompt("Digite el numero 1: ");
+    let num2 = prompt("Digite el numero 2: ");
+    if(Number.isInteger((parseFloat(num1)/parseFloat(num2)))){
+        document.write("El numero" + num1 + "es multiplo del numero"+num2)
+    } else if(Number.isInteger((parseFloat(num2)/parseFloat(num1)))){
+        document.write("El numero" + num2 + "es multiplo del numero"+num1)
+
+    }
+    else{
+        document.write("Los numeros no son multiplos")
+    }
+    </script>
+</body>
+</html>

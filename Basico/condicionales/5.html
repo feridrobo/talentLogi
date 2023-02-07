@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        Pedir una calificación  de 0 a 10 y mostrar de la siguiente manera:
+         Insuficiente, Suficiente, Bien, Excelente
+    -->
+
+    <script>
+        let valor = prompt("Digite el valor de la nota: ")
+        if (valor < 6) {
+            document.write("Insuficiente") 
+        } else if (valor >= 6 && valor <= 7) {
+            document.write("Suficiente") 
+        } else if (valor > 7 && valor < 9) {
+            document.write("Bien")
+        } else if (valor >= 9) {
+            document.write("Excelente")
+        }
+    </script>
+</body>
+
+</html>

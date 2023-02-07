@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        En un videoclub se ofrece la promoción de llevarse tres películas
+         por el precio de las dos más baratas. Haga un programa que, dados los tres precios de las películas, determine la cantidad a pagar. 
+    -->
+    <script>
+        let valor1 = parseFloat(prompt("Digite el precio del primer producto: "));
+        let valor2 = parseFloat(prompt("Digite el precio del segundo producto: "));
+        let valor3 = parseFloat(prompt("Digite el precio del tercer producto: "));
+        let arr = [valor1, valor2, valor3];
+        let total = 0.0;
+        if (valor1 == Math.max(valor1,valor2,valor3)){
+            total = valor2 + valor3;
+        }else if(valor2 == Math.max(valor1,valor2,valor3)){
+            total = valor1 + valor3;
+        }else{
+            total = valor2 + valor1;
+        }
+        document.write("El precio que debes pagar es: "+total)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        Pida a usuario la edad y el sexo, para que la computadora le indique
+         si ya puede jubilarse. Tome en cuenta que un Hombre se puede jubilar cuando tenga 60 años o más, en cambio, una mujer mayor se jubilara si tiene más de 54 años.
+    -->
+    <script>
+
+
+        let edad = parseFloat(prompt("Digite su edad: "));
+        let sexo = prompt("Digite su sexo (M o F): ")
+        if (sexo.toLowerCase() == 'm') {
+            if (edad > 59) {
+                document.write("Ya puede jubilarse")
+            }else{
+                document.write("Aun no cumples los requisitos de edad")
+            }
+        } else if (sexo.toLowerCase() == 'f') {
+            if (edad > 53) {
+                document.write("Ya puede jubilarse")
+            }else{
+                document.write("Aun no cumples los requisitos de edad")
+            }
+        } else {
+            document.write("El dato digitado es erróneo, digite 'M' o 'F'")
+        }
+    </script>
+</body>
+
+</html>

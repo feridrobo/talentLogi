@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Crea un array o arreglo unidimensional con un tamaño de 5,
+         asignar los valores numéricos manualmente (los que tu quieras) y mostrarlos por pantalla.
+
+    -->
+    <script>
+        arreglo = new Array(5);
+        arreglo[0] = prompt('Digite un numero 1:');
+        arreglo[1] = prompt('Digite un numero 2:');
+        arreglo[2] = prompt('Digite un numero 3:');
+        arreglo[3] = prompt('Digite un numero 4:');
+        arreglo[4] = prompt('Digite un numero 5:');
+
+        arreglo.forEach(element => {
+            document.write(element);
+        });
+    </script>
+</body>
+</html>

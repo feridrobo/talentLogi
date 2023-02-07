@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Determinar si un número es par o no.
+    -->
+    <script>
+        
+        function esPar(num){
+            if(num % 2 == 0){
+                return true
+            }
+            return false;
+        }
+
+        function validar(num){    
+        if(esPar(num)){
+            document.write("El numero "+ num + " es par")
+        }else if(!esPar(num) && !isNaN(num) ){
+            document.write("El numero "+ num + " es impar")
+        }else{
+            document.write("El dato ingresado es erroneo")
+        }
+        }
+
+        let num = parseFloat(prompt("Digite un numero:"));
+        validar(num);
+    </script>
+</body>
+</html>
