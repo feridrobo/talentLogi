@@ -11,15 +11,22 @@
          Hacer un programa que realice la media aritmética de 2 números.
     -->
     <script>
-        function mediaAritmetica(){
 
+        function mediaAritmetica(num){
+            let numero = 0;
+            for (let i = 0; i < num; i++) {
+                 numero += parseFloat(prompt("Digite el numero "+ num + ": "));
+            }
+            return numero / num
         }
         function validar(){
+            let num = parseFloat(prompt("¿Cuantos numeros vas a digitar? "))
+            if (num != Number.isNaN && num != undefined){
+                document.write("La media aritmetica es: "+ mediaAritmetica(num))
+            }
+        }
 
-        }
-        for (let i = 0; i < num; i++) {
-          
-        }
+        validar();
     </script>
 </body>
 </html>
